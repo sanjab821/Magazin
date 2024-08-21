@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zeitschrift</title>
+        <style>
+            body {
+                font-family: Georgia, serif;
+                text-align: center;
+                background-color: beige;
+                margin: 0;
+                padding: 20px;
+            }
+            #flipbook {
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+                
+            }
+            .page {
+                width: 100%;
+                height: auto;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Kabelbrücken</h1>
+        <div id="flipbook">
+            <div class="page"><img src="01.jpg" alt="Umschlag"></div>
+            <div class="page"><img src="02.jpg" alt="Seite 2"></div>
+            <div class="page"><img src="03.jpg" alt="Seite 3"></div>
+            <div class="page"><img src="04.jpg" alt="Seite 4"></div>
+            <div class="page"><img src="05.jpg" alt="Seite 5"></div>
+            <div class="page"><img src="06.jpg" alt="Seite 6"></div>
+            <div class="page"><img src="07.jpg" alt="Seite 7"></div>
+            <div class="page"><img src="08.jpg" alt="Seite 8"></div>
+            <div class="page"><img src="09.jpg" alt="Seite 9"></div>
+            <div class="page"><img src="10.jpg" alt="Seite 10"></div>
+            <div class="page"><img src="11.jpg" alt="Seite 11"></div>
+            <div class="page"><img src="12.jpg" alt="Seite 12"></div>
+            <div class="page"><img src="13.jpg" alt="Seite 13"></div>
+            <div class="page"><img src="14.jpg" alt="Seite 14"></div>
+            <div class="page"><img src="15.jpg" alt="Seite 15"></div>
+            <div class="page"><img src="16.jpg" alt="Seite 16"></div>
+            
+        </div>
+        
+        <script src="jquery.min.js"></script>
+        <script src="turn.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#flipbook").turn({
+                    width: 841,
+                    height: 1189,
+                    autoCenter: true
+                });
+            });
+        </script>
+    </body>
+</html>
